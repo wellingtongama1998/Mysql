@@ -4,6 +4,9 @@ Estrutura de um BANCO DE DADOS:
 2 - > Sistema gerenciador de Banco de Dados; SGBD
 3 - > Linguagem de exploração;
 4 - > Programas adicionais.
-
+-----------------------------------------
 -Modelo Relacional.
 SQL - Linguagem de consulta, query.
+-------------------------------------------
+
+create database cadastro;

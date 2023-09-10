@@ -7,6 +7,8 @@ Estrutura de um BANCO DE DADOS:
 -----------------------------------------
 -Modelo Relacional.
 SQL - Linguagem de consulta, query.
+DDL - Linguagem de definição.
+DML - Linguagem de manipulação.
 -------------------------------------------
 -describe pessoas;
 --------------------------------------------

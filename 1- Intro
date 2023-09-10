@@ -8,5 +8,14 @@ Estrutura de um BANCO DE DADOS:
 -Modelo Relacional.
 SQL - Linguagem de consulta, query.
 -------------------------------------------
-
+-describe pessoas;
 create database cadastro;
+
+create table pessoas(
+nome varchar(30),
+idade tinyint,
+sexo char(1),
+peso float,
+altura float,
+nacionalidade varchar(20)
+);

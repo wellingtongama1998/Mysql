@@ -9,13 +9,18 @@ Estrutura de um BANCO DE DADOS:
 SQL - Linguagem de consulta, query.
 -------------------------------------------
 -describe pessoas;
-create database cadastro;
+--------------------------------------------
+create database cadastro
+default character set utf8
+default collate utf8_general_ci;
 
-create table pessoas(
-nome varchar(30),
-idade tinyint,
-sexo char(1),
-peso float,
-altura float,
-nacionalidade varchar(20)
-);
+CREATE TABLE pessoas(
+    nome varchar(30) NOT NULL,
+    nascimento date,
+    sexo enum('M','F'),
+    peso decimal(5,2),
+    altura decimal(3,2),
+    nacionalidade varchar(20) DEFAULT 'Brasil'
+    )default charset = utf8;
+
+

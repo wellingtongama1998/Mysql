@@ -25,8 +25,16 @@ CREATE TABLE pessoas(
     nacionalidade varchar(20) DEFAULT 'Brasil'
     )default charset = utf8;
 -----------------------------------------------
+use cadastro;
 insert into pessoas
 (id, nome, nascimento, sexo, peso, altura, nacionalidade)
 values (DEFAULT, 'Adalgiza', '1930-11-2', 'F', '63.2', '1.75', 'Irlanda');
-
+--------------------------------------------------------------------
+use cadastro;
+insert into pessoas
+(id, nome, nascimento, sexo, peso, altura, nacionalidade)
+values
+(DEFAULT, 'Adalgiza', '1930-11-9', 'F', '73.7', '1.10', 'Irlanda'),
+(DEFAULT, 'Lucas', '1935-10-8', 'M', '63.6', '1.50', 'EUA'),
+(DEFAULT, 'Janaina', '1985-09-5', 'M', '83.5', '1.80', 'Brasil');
 

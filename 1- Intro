@@ -33,7 +33,8 @@ use cadastro;
 insert into pessoas
 (id, nome, nascimento, sexo, peso, altura, nacionalidade)
 values (DEFAULT, 'Adalgiza', '1930-11-2', 'F', '63.2', '1.75', 'Irlanda');
---------------------------------------------------------------------
+
+
 use cadastro;
 insert into pessoas
 (id, nome, nascimento, sexo, peso, altura, nacionalidade)
@@ -46,5 +47,13 @@ values
 ALTER TABLE
 alter table pessoas 
 add column profissao varchar(10);
+
+alter table pessoas 
+drop column profissao;
+
+alter table pessoas
+add column profissao varchar(10) after nome;
+
+
 
 

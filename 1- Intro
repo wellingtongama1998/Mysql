@@ -11,6 +11,7 @@ DDL - Linguagem de definição.
 DML - Linguagem de manipulação.
 -------------------------------------------
 -describe pessoas;
+-desc
 --------------------------------------------
 create database cadastro
 default character set utf8
@@ -25,6 +26,9 @@ CREATE TABLE pessoas(
     nacionalidade varchar(20) DEFAULT 'Brasil'
     )default charset = utf8;
 -----------------------------------------------
+
+
+INSERT INTO
 use cadastro;
 insert into pessoas
 (id, nome, nascimento, sexo, peso, altura, nacionalidade)
@@ -37,4 +41,10 @@ values
 (DEFAULT, 'Adalgiza', '1930-11-9', 'F', '73.7', '1.10', 'Irlanda'),
 (DEFAULT, 'Lucas', '1935-10-8', 'M', '63.6', '1.50', 'EUA'),
 (DEFAULT, 'Janaina', '1985-09-5', 'M', '83.5', '1.80', 'Brasil');
+------------------------------------------------------------------------------
+
+ALTER TABLE
+alter table pessoas 
+add column profissao varchar(10);
+
 

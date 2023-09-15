@@ -26,7 +26,7 @@ CREATE TABLE pessoas(
     nacionalidade varchar(20) DEFAULT 'Brasil'
     )default charset = utf8;
 -----------------------------------------------
-
+(ADICIONAR VALORES)
 
 INSERT INTO
 use cadastro;
@@ -43,19 +43,28 @@ values
 (DEFAULT, 'Lucas', '1935-10-8', 'M', '63.6', '1.50', 'EUA'),
 (DEFAULT, 'Janaina', '1985-09-5', 'M', '83.5', '1.80', 'Brasil');
 ------------------------------------------------------------------------------
+(ALTERAR TABELAS)
 
-ALTER TABLE
+ALTER TABLE (ADICIONAR COLUNA
 alter table pessoas 
 add column profissao varchar(10);
 
+DROP
 alter table pessoas 
 drop column profissao;
 
+ADD + (posição)
 alter table pessoas
 add column profissao varchar(10) after nome;
 
+ADD  + (posição)
 alter table pessoas
 add codigo int first;
+
+CHANGE (modificar nome sem herdar caracteristicas).
+alter TABLE pessoas
+change column profissao prof varchar(20) not null;
+
 
 
 

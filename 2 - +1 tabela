@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS cursos (
+    nome varchar(30) not null unique,(VALOR ÚNICO, NÃO SE REPETE)
+    descricao text,
+    carga int unsigned, -SEM SINAL
+    totaulas int,
+    ano year DEFAULT '2016'
+    )DEFAULT CHARSET = utf8;

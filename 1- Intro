@@ -6,9 +6,11 @@ Estrutura de um BANCO DE DADOS:
 4 - > Programas adicionais.
 -----------------------------------------
 -Modelo Relacional.
+
+DDL - Linguagem de definição. = CREATE DATABASE , CREATE TABLE.
+DML - Linguagem de manipulação. = INSERT INTO .
 SQL - Linguagem de consulta, query.
-DDL - Linguagem de definição.
-DML - Linguagem de manipulação.
+
 -------------------------------------------
 -describe pessoas;
 -desc
@@ -60,6 +62,10 @@ add column profissao varchar(10) after nome;
 ADD  + (posição)
 alter table pessoas
 add codigo int first;
+
+MODIFY (ALTERA CARACTERISTICAS)
+alter table pessoas
+modify column profissão varchar(30);
 
 CHANGE (modificar nome sem herdar caracteristicas).
 alter TABLE pessoas

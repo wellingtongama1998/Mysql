@@ -47,29 +47,33 @@ values
 ------------------------------------------------------------------------------
 (ALTERAR TABELAS)
 
-ALTER TABLE (ADICIONAR COLUNA
+ALTER TABLE (ADICIONAR COLUNA)
 alter table pessoas 
 add column profissao varchar(10);
 
-DROP
+DROP (COLUNA)    
 alter table pessoas 
 drop column profissao;
 
-ADD + (posição)
+ADD + (posição - COLUNA)
 alter table pessoas
 add column profissao varchar(10) after nome;
 
-ADD  + (posição)
+ADD  + (posição - COLUNA)
 alter table pessoas
 add codigo int first;
 
-MODIFY (ALTERA CARACTERISTICAS)
+MODIFY (ALTERA CARACTERISTICAS - COLUNA)
 alter table pessoas
 modify column profissão varchar(30);
 
-CHANGE (modificar nome sem herdar caracteristicas).
+CHANGE (modificar nome sem herdar caracteristicas - COLUNA).
 alter TABLE pessoas
 change column profissao prof varchar(20) not null;
+
+RENAME TO ( ALTERA NOME DA TABELA)
+alter table pessoas
+rename to gafanhotos;
 
 
 

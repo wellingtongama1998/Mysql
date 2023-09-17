@@ -7,8 +7,10 @@ Estrutura de um BANCO DE DADOS:
 -----------------------------------------
 -Modelo Relacional.
 
-DDL - Linguagem de definição. = CREATE DATABASE , CREATE TABLE.
-DML - Linguagem de manipulação. = INSERT INTO .
+DDL - Linguagem de definição(TABELA-DATABASE. 
+        -CREATE DATABASE , -CREATE TABLE, -ALTER TABLE, -DROP TABLE.
+
+DML - Linguagem de manipulação(DADOS). = INSERT INTO 
 SQL - Linguagem de consulta, query.
 
 -------------------------------------------

@@ -5,3 +5,16 @@ CREATE TABLE IF NOT EXISTS cursos (
     totaulas int,
     ano year DEFAULT '2016'
     )DEFAULT CHARSET = utf8;
+
+
+(ADICIONAR CHAVE PRIMARIA)
+alter table cursos
+add column idcurso int first;
+
+
+ALTER table cursos
+ADD PRIMARY KEY(idcurso);
+-------------------------------------------------------------------
+DROP 
+drop column cursos;
+drop database cadastro;

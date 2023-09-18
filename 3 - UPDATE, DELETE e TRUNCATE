@@ -22,3 +22,6 @@ WHERE ano = '2050'
 LIMIT 1;  (APENAS EM 1 TABELA)
 ----------------------------------------------
 DELETE
+
+DELETE FROM cursos
+WHERE id='2050';

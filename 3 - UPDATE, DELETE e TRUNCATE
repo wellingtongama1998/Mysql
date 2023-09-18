@@ -1,0 +1,24 @@
+UPDATE 
+( Mudar nome da tabela na coluna NOME)
+
+UPDATE cursos 
+SET nome = 'HTML5'
+WHERE idcurso = '1';
+
+UPDATE cursos 
+set nome= 'Java', carga ='40', ano= '2015' 
+where idcurso='5';
+-----------------------------------------------
+UPDATE
+
+UPDATE cursos
+SET ano = '2020', carga ='800' (CONFIGURE)
+WHERE ano = '2018'; (ONDE)
+
+
+UPDATE cursos 
+set ano= '2018', carga= '0'
+WHERE ano = '2050'
+LIMIT 1;  (APENAS EM 1 TABELA)
+----------------------------------------------
+DELETE
